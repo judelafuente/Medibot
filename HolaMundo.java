@@ -5,6 +5,7 @@ public class HolaMundo {
 		System.out.println("Hola, soy Juan Pablo");
 		System.out.println("Hola, soy Juan Felipe");
 		System.out.println("Holi, Soy Valentina");
+		System.out.println("Hola, soy Laura");
 		return null;
 		
 	}

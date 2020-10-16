@@ -7,13 +7,13 @@
         <h2>Regístrate</h2>
         <mat-form-field class="inputUsuario">
             <mat-label>Usuario</mat-label>
-            <input matInput placeholder="Ej. jucalderon10">
+            <input matInput placeholder="Ej. jucalderon10"  [(ngModel)]="Usuario">
         </mat-form-field>
         <br>
 
         <mat-form-field class="inputCorreo">
             <mat-label>Correo</mat-label>
-            <input matInput placeholder="Ej. jucalderon10@poligran.edu.co">
+            <input matInput placeholder="Ej. jucalderon10@poligran.edu.co"  [(ngModel)]="email">
         </mat-form-field>
         <br>
 
@@ -26,6 +26,6 @@
         </mat-form-field>
         <br>
 
-        <button mat-raised-button color="primary">Finalizar registro</button>
+        <button mat-raised-button color="primary" (click)="register()">Finalizar registro</button>
     </div>
 </div>

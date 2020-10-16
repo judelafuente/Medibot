@@ -12,17 +12,20 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
 
 const rutas: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegistroComponent },
- { path: '',   redirectTo: '/login', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+ { path: '',   redirectTo: '/home', pathMatch: 'full' },
 ];
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

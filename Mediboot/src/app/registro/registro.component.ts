@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class RegistroComponent implements OnInit {
   hide = true;
   email: string;
-  password: string;
+  Usuario: string;
   confirmPassword: string;
   constructor() { }
 
@@ -16,6 +16,6 @@ export class RegistroComponent implements OnInit {
   }
   register() {
     console.log(this.email);
-    console.log(this.password);
+    console.log(this.Usuario);
   }
 }

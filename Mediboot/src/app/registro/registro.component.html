@@ -1,27 +1,31 @@
-<div class="register">
-    <form class="custom-form" method="post">
-      <h1>Registro</h1>
-      <input
-        type="email"
-        [(ngModel)]="email"
-        name="email"
-        placeholder="Email"
-        required="required"
-      />
-      <input
-        type="password"
-        [(ngModel)]="password"
-        name="password"
-        placeholder="Password"
-        required="required"
-      />
-      <input
-        type="password"
-        [(ngModel)]="confirmPassword"
-        name="password"
-        placeholder="Repeat the password"
-        required="required"
-      />
-      <button type="submit" (click)="register()">Register</button>
-    </form>
-  </div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+    <div class="bienvenida">
+        <h1>Medibot</h1>
+    </div>
+    <div class="registro">
+        <h2>Regístrate</h2>
+        <mat-form-field class="inputUsuario">
+            <mat-label>Usuario</mat-label>
+            <input matInput placeholder="Ej. jucalderon10">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="inputCorreo">
+            <mat-label>Correo</mat-label>
+            <input matInput placeholder="Ej. jucalderon10@poligran.edu.co">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Ingresa la contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <br>
+
+        <button mat-raised-button color="primary">Finalizar registro</button>
+    </div>
+</div>

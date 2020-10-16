@@ -1,26 +1,25 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+    <div class="bienvenida">
+        <h1>Medibot</h1>
+    </div>
+    <div class="login">
+        <h2>Inicia Sesion</h2>
+        <mat-form-field class="inputUsuario">
+            <mat-label>Usuario</mat-label>
+            <input matInput placeholder="Ej. jucalderon10">
+        </mat-form-field>
+        <br>
 
-<div class="grid">
+        <mat-form-field appearance="fill">
+            <mat-label>Ingresa la contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <br>
 
-
-<div class="login">
-    <form class="custom-form" method="post">
-      <h1>Login</h1>
-      <input
-        type="email"
-        [(ngModel)]="email"
-        name="email"
-        placeholder="Email"
-        required="required"
-      />
-      <input
-        type="password"
-        [(ngModel)]="password"
-        name="password"
-        placeholder="Password"
-        required="required"
-      />
-      <button type="submit" (click)="login()">Log in</button>
-      <button type="submit" routerLink="/registro" routerLinkActive="active">Registrarme</button>
-    </form>
-  </div>
+        <button mat-raised-button color="primary">Inicia sesion</button>
+    </div>
 </div>

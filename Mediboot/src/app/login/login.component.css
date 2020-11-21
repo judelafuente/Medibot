@@ -1,19 +1,29 @@
 *{
     box-sizing: border-box;
 }
-.bienvenida{
-    text-align: center;
-    position: relative; top: 10%;    
+
+.general{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://github.com/judelafuente/Medibot/blob/master/Mediboot/src/app/Imagenes/Fondo.png?raw=true");
+    background-size: cover;
+    
 }
 h1{
     font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 80px;
 }
-.general{
+.bienvenida{
+    background-image: url("https://github.com/judelafuente/Medibot/blob/master/Mediboot/src/app/Imagenes/Sin%20t%C3%ADtulo.png?raw=true");
     width: 100%;
+    height: 50%;
+    background-size: inherit;
+}
+.logo{
+    width: 40%;
     height: 100%;
-    background-image: url('https://www.paho.org/sites/default/files/styles/flexslider_full/public/card/2019-12/pills-bottle-stethoscope.jpg?h=4d4ff064&itok=ZMQJOe5b');
-    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 h2{
     font-family: Comic Sans MS, Comic Sans, cursive;
@@ -26,8 +36,7 @@ h2{
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2%;
-    margin-top: 20%;
+    margin-top: 2%;
     background-color: #EBEDEF ;
     border: 2px;
     border-radius: 5px;
@@ -39,10 +48,16 @@ h2{
     }
     .bienvenida{
         width: 100%;
+        height: 50%;
     }
-
+    .logo{
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .login{
         width: 70%;
-        margin-top: 50%;
+        margin-top: 4%;
     }
 }

@@ -1,0 +1,78 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+
+    <div class="configurarCuenta">
+      <div class="centrar">
+  
+        <div class="titulo">
+          <h2>Gestionar cuenta</h2>
+        </div>
+
+        <div class="logoUsuario">
+          <img src="https://github.com/judelafuente/Medibot/blob/master/Mediboot/src/app/Imagenes/UsuarioM03.png?raw=true" alt="LogoUsuario" width="100%" height="100%">
+        </div>
+
+      </div>
+
+      <div class="inputNombre">
+          <mat-form-field class="configurarNombre">
+            <mat-label align="left">Nombre</mat-label>
+            <input matInput #message maxlength="100" placeholder="Ej. Luis">
+            <mat-hint align="end">{{message.value.length}} / 100</mat-hint>
+          </mat-form-field>
+      </div>
+      <br>
+
+      <div class="inputApellido">
+          <mat-form-field class="configurarApellido">
+            <mat-label align="left">Apellido</mat-label>
+            <input matInput #message maxlength="100" placeholder="Ej. Perez">
+            <mat-hint align="end">{{message.value.length}} / 100</mat-hint>
+          </mat-form-field>
+      </div>
+      <br>
+
+      <div class="inputSexo">
+          <mat-form-field class="configurarSexo">
+            <mat-label align="left">Sexo</mat-label>
+            <input matInput #message maxlength="100" placeholder="Ej. Masculino">
+            <mat-hint align="end">{{message.value.length}} / 100</mat-hint>
+          </mat-form-field>
+      </div>
+      <br>
+
+      <div class="inputFecha">
+          <mat-form-field class="configurarFecha">
+            <mat-label align="left">Fecha de nacimiento</mat-label>
+            <input matInput #message maxlength="100" placeholder="Ej. DD/MM/AA">
+            <mat-hint align="end">{{message.value.length}} / 100</mat-hint>
+          </mat-form-field>
+      </div>
+      <br>
+
+      <div class="inputCorreo">
+          <mat-form-field class="configurarCorreo">
+            <mat-label align="left">Correo electronico</mat-label>
+            <input matInput #message maxlength="100" placeholder="Ej. LuisPerezM@gmail.com">
+            <mat-hint align="end">{{message.value.length}} / 100</mat-hint>
+          </mat-form-field>
+      </div>
+      <br>
+
+      <div class="password">
+          <mat-form-field appearance="fill">
+            <mat-label>Clave</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+      </div>
+      <br>
+
+      <div class="botones">
+        <button mat-raised-button color="primary"  routerLink="/registro" routerLinkActive="active" (click)="configurar()">Confirmar Cambios</button>
+      </div>
+    </div>
+</div>
+

@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+.general{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://github.com/judelafuente/Medibot/blob/master/Mediboot/src/app/Imagenes/Fondo.png?raw=true");
+}
+h2{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #3498DB;
+    line-height: 50px;
+}
+
+.configurarCuenta{
+    width: 80%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.titulo{
+    margin: 1%;
+}
+
+.centrar{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logoUsuario{
+    width: 20%;
+    margin: 1%;
+    display:block;
+    margin:auto
+}
+.configurarNombre {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.configurarNombre-width {
+  width: 100%;
+}
+
+.configurarApellido {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.configurarApellido-width {
+  width: 100%;
+}
+
+.configurarSexo {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.configurarSexo-width {
+  width: 100%;
+}
+
+.configurarFecha {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.configurarFecha-width {
+  width: 100%;
+}
+
+.configurarCorreo {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.configurarCorreo-width {
+  width: 100%;
+}
+
+@media only screen and (max-width: 840px){
+    .general{
+        width: 100%;
+    }
+
+    .logoUsuario{
+        width: 50%;
+        margin: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .configurarCuenta{
+        width: 70%;
+    }
+    
+}

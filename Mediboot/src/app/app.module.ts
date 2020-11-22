@@ -22,6 +22,7 @@ import { ModificarNotificacionComponent } from './modificar-notificacion/modific
 
 import {CalendarModule} from 'primeng/calendar';
 import { SoporteComponent } from './soporte/soporte.component';
+import { GestionarCuentaComponent } from './gestionar-cuenta/gestionar-cuenta.component';
 
 
 const rutas: Routes = [
@@ -39,7 +40,8 @@ const rutas: Routes = [
     EliminarNotificacionComponent,
     RecuperarContrasenaComponent,
     ModificarNotificacionComponent,
-    SoporteComponent
+    SoporteComponent,
+    GestionarCuentaComponent
   ],
   imports: [
     BrowserModule,

@@ -21,6 +21,7 @@ import { RecuperarContrasenaComponent } from './recuperar-contrasena/recuperar-c
 import { ModificarNotificacionComponent } from './modificar-notificacion/modificar-notificacion.component';
 
 import {CalendarModule} from 'primeng/calendar';
+import { SoporteComponent } from './soporte/soporte.component';
 
 
 const rutas: Routes = [
@@ -37,7 +38,8 @@ const rutas: Routes = [
     HomeComponent,
     EliminarNotificacionComponent,
     RecuperarContrasenaComponent,
-    ModificarNotificacionComponent
+    ModificarNotificacionComponent,
+    SoporteComponent
   ],
   imports: [
     BrowserModule,

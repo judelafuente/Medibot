@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+.general{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://github.com/judelafuente/Medibot/blob/master/Mediboot/src/app/Imagenes/Fondo.png?raw=true");
+    background-size: cover;
+    
+}
+h1{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 20px;
+}
+.bienvenida{
+    background-image: url("https://github.com/judelafuente/Medibot/blob/master/Mediboot/src/app/Imagenes/Sin%20t%C3%ADtulo.png?raw=true");
+    width: 100%;
+    height: 50%;
+    background-size: inherit;
+}
+.logo{
+    width: 40%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenido{
+        width: 25%;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        background-color: #EBEDEF ;
+        border: 2px;
+        border-radius: 5px;
+}
+.Texto{
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 840px){
+    .general{
+        width: 100%;
+    }
+    .bienvenida{
+        width: 100%;
+        height: 50%;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1{
+        font-size: 15px;
+
+    }
+    .contenido{
+        width: 70%;
+        margin-top: 4%;
+    }
+}

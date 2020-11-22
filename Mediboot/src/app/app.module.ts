@@ -7,6 +7,12 @@ import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { HomeComponent } from './home/home.component';
 import { EliminarNotificacionComponent } from './eliminar-notificacion/eliminar-notificacion.component';
+import { RecuperarContrasenaComponent } from './recuperar-contrasena/recuperar-contrasena.component';
+import { ModificarNotificacionComponent } from './modificar-notificacion/modificar-notificacion.component';
+import { SoporteComponent } from './soporte/soporte.component';
+import { GestionarCuentaComponent } from './gestionar-cuenta/gestionar-cuenta.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { DesplegableComponent } from './desplegable/desplegable.component';
   
 import { FormsModule } from "@angular/forms";
 import { RouterModule, Routes } from '@angular/router';
@@ -17,12 +23,17 @@ import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
-import { RecuperarContrasenaComponent } from './recuperar-contrasena/recuperar-contrasena.component';
-import { ModificarNotificacionComponent } from './modificar-notificacion/modificar-notificacion.component';
+
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {​​​​MatGridListModule}​​​​ from '@angular/material/grid-list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import { MatSliderModule } from '@angular/material/slider';
 
 import {CalendarModule} from 'primeng/calendar';
-import { SoporteComponent } from './soporte/soporte.component';
-import { GestionarCuentaComponent } from './gestionar-cuenta/gestionar-cuenta.component';
+
 
 
 const rutas: Routes = [
@@ -41,7 +52,9 @@ const rutas: Routes = [
     RecuperarContrasenaComponent,
     ModificarNotificacionComponent,
     SoporteComponent,
-    GestionarCuentaComponent
+    GestionarCuentaComponent,
+    InicioComponent,
+    DesplegableComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +68,14 @@ const rutas: Routes = [
     MatButtonModule,
     MatRadioModule,
     MatSelectModule,
-    CalendarModule
+    CalendarModule,
+    MatProgressBarModule,
+    MatGridListModule,
+    MatSidenavModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatListModule,
+    MatSliderModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

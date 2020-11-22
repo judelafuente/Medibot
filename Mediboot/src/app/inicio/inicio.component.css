@@ -1,0 +1,51 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.division{
+    margin-left: 200 px;
+}
+
+h4{
+    text-align: left;
+}
+
+h3{
+    max-width: 150px;
+    max-height: 30px;
+}
+
+.fondo{
+    background-image: url("https://github.com/judelafuente/Medibot/blob/067322667c78a33d13c1437034fa6ef38b88dc8a/Mediboot/src/app/Imagenes/Fondo.png?raw=true");
+    width: 100%;
+    border: blue solid 2px;
+}
+
+.eliminar{
+    max-width: 40px;
+    max-height: 80px;
+}
+
+.modificar{
+    max-width: 40px;
+    max-height: 80px;
+
+}
+
+.aviso{
+    margin: 2%;
+    text-align: center;
+    padding:10 px;
+}
+
+.imagen1{
+    max-width: 100px;
+}
+
+.imagen2{
+    max-width: 100px;
+    border: blue solid 2px;
+}

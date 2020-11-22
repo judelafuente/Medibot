@@ -18,6 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import { RecuperarContrasenaComponent } from './recuperar-contrasena/recuperar-contrasena.component';
+import { ModificarNotificacionComponent } from './modificar-notificacion/modificar-notificacion.component';
+
+import {CalendarModule} from 'primeng/calendar';
 
 
 const rutas: Routes = [
@@ -33,7 +36,8 @@ const rutas: Routes = [
     RegistroComponent,
     HomeComponent,
     EliminarNotificacionComponent,
-    RecuperarContrasenaComponent
+    RecuperarContrasenaComponent,
+    ModificarNotificacionComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,8 @@ const rutas: Routes = [
     MatIconModule,
     MatButtonModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    CalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

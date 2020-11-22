@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+.general{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://github.com/judelafuente/Medibot/blob/master/Mediboot/src/app/Imagenes/Fondo.png?raw=true");
+}
+h2{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #EC407A ;
+    line-height: 50px;
+}
+
+.modificar{
+    width: 80%;
+    height: 95%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+
+.titulo{
+    margin: 1%;
+}
+
+.centrar{
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.logoNotificacion{
+    width: 10%;
+    margin: 1%;
+    display:block;
+    margin:auto
+}
+
+.inputMedicamento{
+    text-align: center;
+    width: 98%;
+    float: left;
+    padding: 5px;
+    margin: 1%;
+}
+
+.horario{
+    text-align: center;
+    width: 98%;
+    float: left;
+    padding: 5px;
+    margin: 1%;
+}
+
+.tono{
+    text-align: center;
+    width: 98%;
+    float: left;
+    padding: 5px;
+    margin: 1%;
+}
+
+.posponer{
+    text-align: center;
+    width: 98%;
+    float: left;
+    padding: 10px;
+    margin: 1%;
+}
+
+.botones{
+    text-align: center;
+    width: 98%;
+    float: left;
+    padding: 10px;
+    margin: 1%;
+}
+
+.texto{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (max-width: 840px){
+    .general{
+        width: 100%;
+    }
+    .modificar{
+        width: 100%;
+    }
+    .logoNotificacion{
+        width: 30%;
+        margin: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .inputMedicamento{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin: 1%;
+    }
+
+    .horario{
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        margin: 1%;
+    }
+    
+    .posponer{
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        margin: 1%;
+    }
+    
+    .botones{
+        text-align: center;
+        width: 100%;
+        float: left;
+        padding: 10px;
+        margin: 1%;
+    }
+}

@@ -1,0 +1,70 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+
+    <div class="modificar">
+
+        <div class="centrar">
+    
+            <div class="titulo">
+                <h2>MODIFICAR NOTIFICACION</h2>
+            </div>
+
+            <div class="logoNotificacion">
+                <img src="https://github.com/judelafuente/Medibot/blob/master/Mediboot/src/app/Imagenes/Medicamento%2002.png?raw=true" alt="LogoNotificacion" width="100%" height="100%">
+            </div>
+        </div>
+        
+
+        <div class="inputMedicamento">
+            <mat-form-field appearance="fill">
+                <mat-label>Nombre del medicamento</mat-label>
+                <mat-select disableRipple>
+                    <mat-option value="1">Acetaminofén</mat-option>
+                    <mat-option value="2">Ibuprofeno</mat-option>
+                    <mat-option value="3">Naproxeno</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        
+
+        <div class="horario">
+            <label>Horario de notificacion:</label>
+            <br>
+            <p-calendar [(ngModel)]="date" [timeOnly]="true" inputId="timeonly"></p-calendar>
+            <br>
+            <mat-radio-button value="1" color="accent">Repetir</mat-radio-button>
+        </div>
+        
+        
+
+        <div class="tono">
+            <mat-form-field appearance="fill">
+                <mat-label>Tono de notificacion</mat-label>
+                <mat-select disableRipple>
+                    <mat-option value="1">Acetaminofén</mat-option>
+                    <mat-option value="2">Ibuprofeno</mat-option>
+                    <mat-option value="3">Naproxeno</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <br>
+
+        <div class="posponer">
+            <mat-radio-button value="1" color="accent">Posponer alarma</mat-radio-button>
+        </div>
+
+        <div class="botones">
+            <button mat-fab color="accent" aria-label="Example icon button with a delete icon">
+                <mat-icon> border_color</mat-icon>
+            </button>
+            <br>
+            <label class="texto">Modificar Notificacion</label>
+            <br>
+            <br>
+            <button mat-raised-button color="primary" routerLink="/home" [style]="{'margin':'10px'}">Atras</button>
+        </div>
+
+        
+    </div>
+
+</div>

@@ -9,7 +9,7 @@ import { ModificarNotificacionComponent } from './modificar-notificacion/modific
 import { RecuperarContrasenaComponent } from './recuperar-contrasena/recuperar-contrasena.component';
 import { RegistroComponent } from './registro/registro.component';
 import { SoporteComponent } from './soporte/soporte.component';
-
+import { InstruccionesComponent } from './instrucciones/instrucciones.component'; 
 const routes: Routes = [
   {path:'',redirectTo: '/home', pathMatch:'full'},
   {path: 'home', component: HomeComponent},
@@ -20,7 +20,8 @@ const routes: Routes = [
   {path: 'recuperarContrasena', component: RecuperarContrasenaComponent},
   {path: 'inicio', component: InicioComponent},
   {path: 'gestionarCuenta', component: GestionarCuentaComponent},
-  {path: 'soporte', component: SoporteComponent}
+  {path: 'soporte', component: SoporteComponent},
+  {path: 'instrucciones', component: InstruccionesComponent}
 ];
 
 @NgModule({

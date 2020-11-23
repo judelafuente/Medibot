@@ -13,7 +13,8 @@ import { SoporteComponent } from './soporte/soporte.component';
 import { GestionarCuentaComponent } from './gestionar-cuenta/gestionar-cuenta.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { DesplegableComponent } from './desplegable/desplegable.component';
-  
+import { InstruccionesComponent } from './instrucciones/instrucciones.component'; 
+
 import { FormsModule } from "@angular/forms";
 import { RouterModule, Routes } from '@angular/router';
 import {MatInputModule} from '@angular/material/input';
@@ -54,7 +55,9 @@ const rutas: Routes = [
     SoporteComponent,
     GestionarCuentaComponent,
     InicioComponent,
-    DesplegableComponent
+    DesplegableComponent,
+    InstruccionesComponent
+    
   ],
   imports: [
     BrowserModule,

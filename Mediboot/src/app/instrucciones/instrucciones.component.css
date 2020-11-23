@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+.general{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://github.com/judelafuente/Medibot/blob/master/Mediboot/src/app/Imagenes/Fondo.png?raw=true");
+    background-size: cover;
+    
+}
+
+.bienvenida{
+    background-image: url("https://github.com/judelafuente/Medibot/blob/master/Mediboot/src/app/Imagenes/Sin%20t%C3%ADtulo.png?raw=true");
+    width: 100%;
+    height: 50%;
+    background-size: inherit;
+}
+.logo{
+    width: 40%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttons{
+    text-align: center;
+    margin-top: 4%; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.botones{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.login{
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    background-color: #EBEDEF ;
+    border: 2px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 380px){
+    .general{
+        width: 100%;
+    }
+    .bienvenida{
+        width: 100%;
+        height: 50%;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+    }
+}
